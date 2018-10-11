@@ -1,7 +1,7 @@
-Hydro-Snowflake-Identicon-Generator Based On  Blockies
-=======================================================
+Hydro-Snowflake-Identicon-Generator Based On  Seedphrases
+=========================================================
 
-A tiny library for generating unique snowflake identicons for hydro snowflake addresses. These are not meant to replace user profiles, but as security icons, to allow the user to more easily check if an address he wants to interact with is the correct one. The symmetrical aspect of the icons allow our brain see [faces or objects](https://en.wikipedia.org/wiki/Pareidolia), making the icon more recognizable.
+A tiny library, based on blockies, for generating unique snowflake identicons for hydro snowflake addresses. These are not meant to replace user profiles, but as security icons, to allow the user to more easily check if an address he wants to interact with is the correct one. The symmetrical aspect of the icons allow our brain see [faces or objects](https://en.wikipedia.org/wiki/Pareidolia), making the icon more recognizable.
 
 ![Sample blockies image](snowflakeIdenticonSamples.png "HydroSnowflake")
 
@@ -19,6 +19,10 @@ document.body.appendChild(icon); // icon is a canvas element
 
 In the above example the icon will be 50x50 pixels.
 
+Blockies
+--------
+
+https://github.com/ethereum/blockies
 
 Notes
 -----
