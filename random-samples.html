@@ -109,10 +109,8 @@ var svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220">  <defs
 				predefinedColorsSliced = predefinedColors.splice(randseedConverted[5] - 2, 5);
 			}
 		}
-		console.log(predefinedColors);
 		backgroundElement.childNodes[1].style.fill = predefinedColors[randseedConverted[6]];
 		predefinedColors.splice(randseedConverted[6], 1);
-		console.log(predefinedColors);
 		for (let i = 0; i < eyesElement.childNodes.length; i++){
 			if (eyesElement.childNodes[i].className){
 				if (eyesElement.childNodes[i].className.animVal === 'main'){
