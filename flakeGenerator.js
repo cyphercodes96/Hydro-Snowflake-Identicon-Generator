@@ -134,8 +134,4 @@ const svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220">  <de
 	if (typeof window !== "undefined") {
 		 window.hydroIdenticon = api;
 	}
-for (let i = 0 ; i < 50; i++ ){
-createIcon();
-}
-
 })();
