@@ -46,7 +46,7 @@ var svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220">  <defs
 		if (randseed[7] < 0){
 			randseed[7] = randseed[7]*=-1;
 		}
-		randseedConverted[7] = randseed[7]%14;
+		randseedConverted[7] = randseed[7]%13;
 	}
 	
 	function switchLayers(doc){
@@ -102,6 +102,7 @@ var svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220">  <defs
 			}
 		}
 		backgroundElement.childNodes[1].style.fill = predefinedColors[randseedConverted[6]];
+		predefinedColors.splice(randseedConverted[6], 1);
 		for (let i = 0; i < eyesElement.childNodes.length; i++){
 			if (eyesElement.childNodes[i].className){
 				if (eyesElement.childNodes[i].className.animVal === 'main'){
