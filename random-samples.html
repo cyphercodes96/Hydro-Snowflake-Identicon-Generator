@@ -58,8 +58,6 @@ var svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220">  <defs
 	}
 	
 	function switchLayers(doc){
-		console.log(randseedConverted);
-		console.log(predefinedColors);
 		if (randseedConverted[0] +1 !== 5){
 			var defaultElement = doc.documentElement.getElementById('flake-5');
 			defaultElement.style.display = 'none';
@@ -98,7 +96,6 @@ var svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220">  <defs
 		var mouthElement = doc.documentElement.getElementById('mouth-'+(randseedConverted[2]+1));
 		var backgroundElement = doc.documentElement.getElementById('shape-bg-1');
 		var eyesElement = doc.documentElement.getElementById('eyes-'+(randseedConverted[4]+1));
-		console.log(predefinedColors);
 		flakeElement.childNodes[1].style.fill = predefinedColors[randseedConverted[5]];
 		faceElement.childNodes[1].style.fill = predefinedColors[randseedConverted[5]];
 		if (randseedConverted[5] === 0){
@@ -106,20 +103,12 @@ var svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220">  <defs
 		} else if (randseedConverted[5] === 1){
 			predefinedColorsSliced = predefinedColors.splice(0, 4);	
 		} else {
-			console.log('else');
-			console.log(randseedConverted[5]);
-			console.log(predefinedColors);
 			if (randseedConverted[5] + 2 > predefinedColors.length-1){
-				console.log('if');
 				predefinedColorsSliced = predefinedColors.splice(randseedConverted[5] - 2, predefinedColors.length - 1);
 			} else {
-				console.log('else');
 				predefinedColorsSliced = predefinedColors.splice(randseedConverted[5] - 2, 5);
 			}
 		}
-		console.log(predefinedColorsSliced);
-		console.log(predefinedColors);
-		console.log(predefinedColors[randseedConverted[6]]);
 		backgroundElement.childNodes[1].style.fill = predefinedColors[randseedConverted[6]];
 		for (let i = 0; i < eyesElement.childNodes.length; i++){
 			if (eyesElement.childNodes[i].className){
