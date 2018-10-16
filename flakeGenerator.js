@@ -116,7 +116,7 @@ var svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220">  <defs
 		var newOpts = {};
 		newOpts.seed = opts.seed || Math.floor((Math.random()*Math.pow(10,16))).toString(16);
 		seedrand(newOpts.seed, 8);
-		newOpts.size = opts.size || 125;
+		newOpts.size = opts.size || 128;
 		return newOpts;
 	}
 
